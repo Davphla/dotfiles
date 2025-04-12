@@ -2,13 +2,13 @@
 
 ### Set your preferred terminal and app launcher
 set $term alacritty
-set $menu wofi
+set $menu wmenu-run
 
 ### Default Mod key (Mod4 = Super/Windows key)
 set $mod Mod4
 
 ### Font for window titles
-font pango:FiraCode Nerd Font 10
+font pango:monospace 10
 
 ### Output config (change to your monitor name)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
@@ -31,18 +31,6 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec "swaynag -t warning -m 'Exit sway?' -b 'Yes' 'swaymsg exit'"
 
-### Window focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
-
-### Window movement
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
-
 ### Arrows keys focus
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -54,7 +42,6 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-
 
 ### Window layout
 bindsym $mod+space layout toggle split
@@ -145,16 +132,5 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
-
-
-
-### Input devices (optional)
-
-### Gaps (via sway-gaps if installed)
-#gaps inner 10
-#gaps outer 15
-
-### Startup wallpaper (optional if using swaybg or swaylock)
-# exec swaybg -i ~/Pictures/wallpapers/wall.jpg -m fill
 
 include /etc/sway/config.d/*
