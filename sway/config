@@ -2,13 +2,13 @@
 
 ### Set your preferred terminal and app launcher
 set $term alacritty
-set $menu wmenu-run
+set $menu wofi
 
 ### Default Mod key (Mod4 = Super/Windows key)
 set $mod Mod4
 
 ### Font for window titles
-font pango:monospace 10
+font pango:FiraCode Nerd Font 10
 
 ### Output config (change to your monitor name)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
