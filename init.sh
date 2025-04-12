@@ -23,10 +23,10 @@ yay -S swaylock-effects --noconfirm
 nmcli networking on
 
 # Set wallpaper using swaybg if desired
-mkdir -p ~/Pictures/wallpapers
 # cp your wallpaper to that folder
+mkdir -p ~/Pictures/wallpapers
 
-# Syncronize config file from this repository and local environment
+# Create symlink from this repository to your local environment
 stow .
 
 echo "🎉 Setup complete! You can now launch Sway with 'sway' or set it as your default Wayland session."

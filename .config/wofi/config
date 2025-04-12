@@ -1,0 +1,13 @@
+[general]
+border_width = 2
+font = "Noto Sans 10"
+height=500px
+
+[drun]
+columns = 3
+icon_size = 32
+
+[image]
+allow_images=true
+image_size=24
+allow_markup=true

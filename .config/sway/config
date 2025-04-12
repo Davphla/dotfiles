@@ -2,7 +2,7 @@
 
 ### Set your preferred terminal and app launcher
 set $term alacritty
-set $menu wmenu-run
+set $menu wofi
 
 ### Default Mod key (Mod4 = Super/Windows key)
 set $mod Mod4
@@ -25,7 +25,7 @@ exec swayidle -w \
 
 ### Basic keybindings
 bindsym $mod+Return exec $term
-bindsym $mod+d exec $menu
+bindsym $mod+d exec $menu --show drun
 bindsym $mod+q kill
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+c reload

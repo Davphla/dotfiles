@@ -3,3 +3,4 @@ init.sh
 backup.sh
 backup
 .gitignore
+README.md
