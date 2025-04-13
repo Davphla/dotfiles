@@ -120,7 +120,7 @@ input * {
     natural_scroll enabled
     tap enabled
     xkb_layout us
-    xkb_variant workman
+    xkb_variant workman-intl
 }
 
 bar {
