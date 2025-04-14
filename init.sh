@@ -3,8 +3,10 @@
 
 echo "🔧 Installing Sway and related tools..."
 
+sudo pacman -Syu
+
 # Install sway and friends
-sudo pacman -Syu --noconfirm \
+sudo pacman -S \
   sway swaylock swayidle \
   alacritty wofi mako \
   grim slurp brightnessctl \
@@ -17,7 +19,7 @@ sudo pacman -Syu --noconfirm \
   stow
 
 # Optional: swaylock-effects (prettier lock screen)
-yay -S swaylock-effects --noconfirm
+#yay -S swaylock-effects --noconfirm
 
 # Enable network applet
 nmcli networking on
