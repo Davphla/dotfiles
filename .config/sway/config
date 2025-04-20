@@ -22,7 +22,6 @@ exec swayidle -w \
   resume 'swaymsg "output * dpms on"' \
   before-sleep 'swaylock -f -c 000000'
 
-
 ### Basic keybindings
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu --show drun
@@ -124,13 +123,7 @@ input * {
 }
 
 bar {
-    position top
-    status_command i3blocks
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    swaybar_command waybar
 }
 
 include /etc/sway/config.d/*

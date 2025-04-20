@@ -16,7 +16,7 @@ sudo pacman -S \
   ttf-fira-code ttf-nerd-fonts-symbols \
   pulseaudio pavucontrol \
   swaybg wl-clipboard \
-  stow i3blocks
+  stow waybar
 
 # Optional: swaylock-effects (prettier lock screen)
 #yay -S swaylock-effects --noconfirm

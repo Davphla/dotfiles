@@ -1,0 +1,89 @@
+* {
+  font-family: monospace;
+  font-size: 12px;
+  color: #cacaca; /* Light text color */
+  background: #222222; /* Dark background */
+  padding: 0 4px;
+}
+
+window#waybar {
+  background-color: #222222; /* Dark background */
+  border: none;
+}
+
+#workspaces button {
+  background: #222222; /* Dark background */
+  color: #ffffff; /* Light text color */
+  border: none;
+  padding: 0 6px;
+}
+
+#workspaces button:hover {
+  background: #444444; /* Darker gray on hover */
+}
+
+#workspaces button.focused {
+  background: #585858; /* Green for focused workspace */
+  color: #ffffff;
+}
+
+#clock,
+#network,
+#battery,
+#pulseaudio,
+#cpu,
+#memory,
+#tray {
+  background: #222222; /* Dark background */
+  color: #ffffff; /* Light text color */
+  padding: 0 8px;
+  transition: background-color 0.2s ease;
+}
+
+#network {
+  background-color: #2980b9; /* Blue for network */
+}
+
+#network.disconnected {
+  background-color: #e74c3c; /* Red for disconnected network */
+}
+
+#battery {
+  background-color: #2ecc71; /* Green for battery */
+}
+
+#battery.charging {
+  background-color: #27ae60; /* Darker green when charging */
+}
+
+#battery.critical:not(.charging) {
+  background-color: #e74c3c; /* Red for critical battery */
+}
+
+#pulseaudio {
+  background-color: #f39c12; /* Yellow for audio */
+}
+
+#pulseaudio.muted {
+  background-color: #7f8c8d; /* Muted audio color */
+}
+
+#cpu {
+  background-color: #f39c12; /* Yellow for CPU */
+}
+
+#memory {
+  background-color: #9b59b6; /* Purple for memory */
+}
+
+#tray {
+  background-color: #34495e; /* Dark blue-gray for tray */
+}
+
+#tray > .needs-attention {
+  background-color: #e74c3c; /* Red for tray items needing attention */
+}
+
+#tray > .passive {
+  background-color: #7f8c8d; /* Gray for passive tray items */
+}
